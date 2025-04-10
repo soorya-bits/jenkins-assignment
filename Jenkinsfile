@@ -29,9 +29,6 @@ pipeline {
         }
 
         stage('Deploy to Production') {
-            when {
-                branch 'main'
-            }
             steps {
                 input "Deploy to production?"
                 echo 'Deploying to production...'
